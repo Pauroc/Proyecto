@@ -12,11 +12,11 @@ public class Login extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        Registrop = (Button)findViewById(R.id.btnregistro);
+        Registrop = findViewById(R.id.btnregistro);
         Registrop.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent();
+                Intent i = new Intent(Login.this, Registro.class);
                 startActivity(i);
             }
         });
