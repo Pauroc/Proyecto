@@ -25,13 +25,17 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="24dp"
+        android:backgroundTint="#BDBDBD"
         android:ems="10"
-        android:inputType="textPersonName"
         android:hint="Nombres"
+        android:inputType="textPersonName"
+        android:textColor="#BDBDBD"
+        android:textColorHighlight="#BDBDBD"
+        android:textColorHint="#BDBDBD"
+        android:textColorLink="#BDBDBD"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        android:backgroundTint="#E91E63"/>
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <EditText
         android:id="@+id/editTextTextPersonName2"
@@ -40,13 +44,17 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="24dp"
+        android:backgroundTint="#BDBDBD"
         android:ems="10"
-        android:inputType="textPersonName"
         android:hint="Apellidos"
+        android:inputType="textPersonName"
+        android:textColor="#BDBDBD"
+        android:textColorHighlight="#BDBDBD"
+        android:textColorHint="#BDBDBD"
+        android:textColorLink="#BDBDBD"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
-        android:backgroundTint="#E91E63"/>
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
 
     <EditText
         android:id="@+id/editTextTextPersonName3"
@@ -55,13 +63,17 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="24dp"
-        android:hint="Email"
+        android:backgroundTint="#BDBDBD"
         android:ems="10"
+        android:hint="Email"
         android:inputType="textPersonName"
+        android:textColor="#BDBDBD"
+        android:textColorHighlight="#BDBDBD"
+        android:textColorHint="#BDBDBD"
+        android:textColorLink="#BDBDBD"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2"
-        android:backgroundTint="#E91E63"/>
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
 
     <EditText
         android:id="@+id/editTextTextPersonName4"
@@ -70,13 +82,17 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="24dp"
+        android:backgroundTint="#BDBDBD"
         android:ems="10"
-        android:inputType="textPassword"
         android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="#BDBDBD"
+        android:textColorHighlight="#BDBDBD"
+        android:textColorHint="#BDBDBD"
+        android:textColorLink="#BDBDBD"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3"
-        android:backgroundTint="#E91E63"/>
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3" />
 
     <EditText
         android:id="@+id/editTextTextPersonName5"
@@ -85,13 +101,17 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="24dp"
+        android:backgroundTint="#BDBDBD"
         android:ems="10"
         android:hint="Confirmar contraseña"
         android:inputType="textPassword"
+        android:textColor="#BDBDBD"
+        android:textColorHighlight="#BDBDBD"
+        android:textColorHint="#BDBDBD"
+        android:textColorLink="#BDBDBD"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4"
-        android:backgroundTint="#E91E63"/>
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4" />
 
     <Button
         android:id="@+id/button"
@@ -100,7 +120,9 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="24dp"
+        android:background="@drawable/button_redon_border"
         android:text="Resgistrar"
+        android:textColor="#DBDBDB"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName5" />
