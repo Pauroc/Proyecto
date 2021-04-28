@@ -19,7 +19,7 @@
         app:srcCompat="@drawable/reg" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/txtEmailI"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
@@ -58,7 +58,7 @@
         android:textColorLink="#BDBDBD"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+        app:layout_constraintTop_toBottomOf="@+id/txtEmailI" />
 
     <EditText
         android:id="@+id/editTextTextPersonName3"
@@ -124,7 +124,7 @@
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/Iniciar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
