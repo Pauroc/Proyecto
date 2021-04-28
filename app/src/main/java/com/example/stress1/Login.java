@@ -34,18 +34,15 @@ public class Login extends AppCompatActivity {
                 String email = Etxt.getText().toString();
                 String Contraseña = Ptxt.getText().toString();
 
-                if(email.isEmpty()) {
-                    CharSequence text = "Campos vacios";
+                if(email.isEmpty() || Contraseña.isEmpty()) {
+                    Etxt.setError("Campo vacio");
+                    Ptxt.setError("Campo vacio");
+                }else if(Patterns.EMAIL_ADDRESS.matcher(email).matches() && !Contraseña.isEmpty()){
+                    CharSequence text = "Datos correctos";
                     Toast.makeText(Login.this, text, Toast.LENGTH_SHORT).show();
-                }else if(Patterns.EMAIL_ADDRESS.matcher(email).matches()){
-                    CharSequence text = "Formato correcto de correo";
-                    Toast.makeText(Login.this, text, Toast.LENGTH_SHORT).show();
+                    //Etxt.setError("Formato correcto de correo\"");
                 }else if(!Patterns.EMAIL_ADDRESS.matcher(email).matches()){
-                    CharSequence text = "Formato incorrecto de correo";
-                    Toast.makeText(Login.this, text, Toast.LENGTH_SHORT).show();
-                }else if (Contraseña.isEmpty()){
-                    CharSequence text = "Campos vacios";
-                    Toast.makeText(Login.this, text, Toast.LENGTH_SHORT).show();
+                    Etxt.setError("Formato incorrecto de correo");
                 }
 
             }
