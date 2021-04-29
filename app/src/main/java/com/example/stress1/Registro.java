@@ -51,8 +51,8 @@ public class Registro extends AppCompatActivity {
                         CharSequence text = "Datos correctos";
                         Toast.makeText(Registro.this, text, Toast.LENGTH_SHORT).show();
                     } else if(Contraseña != CContraseña) {
-                        CCtxt.setError(CContraseña);
-                        Ctxt.setError(Contraseña);
+                        CCtxt.setError(CContraseña,null);
+                        Ctxt.setError(Contraseña,null);
                     }
                 }
             }
