@@ -40,20 +40,23 @@ public class Registro extends AppCompatActivity {
             if(nombre.isEmpty() || apellido.isEmpty() || email.isEmpty() || Contraseña.isEmpty() || CContraseña.isEmpty()) {
                 CharSequence text = "Diligencie todos los campos";
                 Toast.makeText(Registro.this, text, Toast.LENGTH_SHORT).show();
-               // Etxt.setError("Campo vacio");
+                // Etxt.setError("Campo vacio");
                 // Ptxt.setError("Campo vacio");
-
-            }else if(!Patterns.EMAIL_ADDRESS.matcher(email).matches()){
+            }else {
+                if(!Patterns.EMAIL_ADDRESS.matcher(email).matches()){
                 Etxt.setError("Correo inválido");
 
-            } else if(Patterns.EMAIL_ADDRESS.matcher(email).matches()){
-                  if (Contraseña == CContraseña){
-                      CharSequence text = "Datos correctos";
-                      Toast.makeText(Registro.this, text, Toast.LENGTH_SHORT).show();
-                  } else {
-                      CCtxt.setError("Deben ser iguales");
-                  }
+                }else if(Patterns.EMAIL_ADDRESS.matcher(email).matches()){
+                    if (Contraseña == CContraseña){
+                        CharSequence text = "Datos correctos";
+                        Toast.makeText(Registro.this, text, Toast.LENGTH_SHORT).show();
+                    } else if(Contraseña != CContraseña) {
+                        CCtxt.setError(CContraseña);
+                        Ctxt.setError(Contraseña);
+                    }
+                }
             }
+
         }
         });
     }
