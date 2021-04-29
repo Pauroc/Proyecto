@@ -47,12 +47,12 @@ public class Registro extends AppCompatActivity {
                 Etxt.setError("Correo inválido");
 
                 }else if(Patterns.EMAIL_ADDRESS.matcher(email).matches()){
-                    if (Contraseña == CContraseña){
+                    if (Contraseña.equals(CContraseña)){
                         CharSequence text = "Datos correctos";
                         Toast.makeText(Registro.this, text, Toast.LENGTH_SHORT).show();
-                    } else if(Contraseña != CContraseña) {
-                        CCtxt.setError(CContraseña,null);
-                        Ctxt.setError(Contraseña,null);
+                    } else {
+                        CharSequence text = "Las contraseñas deben ser iguales";
+                        Toast.makeText(Registro.this, text, Toast.LENGTH_SHORT).show();
                     }
                 }
             }
