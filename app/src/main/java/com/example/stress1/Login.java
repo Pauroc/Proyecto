@@ -17,7 +17,7 @@ public class Login extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        Etxt = findViewById(R.id.txtEmailI);
+        Etxt = findViewById(R.id.Nombres);
         Ptxt = findViewById(R.id.txtContraseñaI);
         Registrop = findViewById(R.id.btnregistro);
         Registrop.setOnClickListener(new View.OnClickListener() {
@@ -44,9 +44,7 @@ public class Login extends AppCompatActivity {
                 }else if(!Patterns.EMAIL_ADDRESS.matcher(email).matches()){
                     Etxt.setError("Formato incorrecto de correo");
                 }
-
             }
         });
     }
-
 }

@@ -24,7 +24,7 @@
         app:layout_constraintTop_toBottomOf="@+id/Iniciar" />
 
     <EditText
-        android:id="@+id/txtEmailI"
+        android:id="@+id/Nombres"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -68,7 +68,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtEmailI" />
+        app:layout_constraintTop_toBottomOf="@+id/Nombres" />
 
     <Button
         android:id="@+id/Iniciar"
