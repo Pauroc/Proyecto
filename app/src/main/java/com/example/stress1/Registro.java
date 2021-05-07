@@ -62,7 +62,7 @@ public class Registro extends AppCompatActivity {
                 }else if(Patterns.EMAIL_ADDRESS.matcher(email).matches()){
                     if (Contraseña.equals(CContraseña)){
                         if(ContraseñaV( Contraseña) ) {
-                            CrearUsuario("");
+                            CrearUsuario("http://10.0.2.2/Prueba/CrearUsuario.php");
                             /*CharSequence text = "Datos correctos";
                             Toast.makeText(Registro.this, text, Toast.LENGTH_SHORT).show();*/
                         }else{
@@ -105,9 +105,9 @@ public class Registro extends AppCompatActivity {
             @Override
             public void onResponse(String response) {
                 if (!response.isEmpty()){
-                    //Ptxt.setError(response.toString());
-                    CharSequence text = "Funciono";
-                    Toast.makeText(Registro.this, text, Toast.LENGTH_SHORT).show();
+                    Etxt.setError(response.toString());
+                    //CharSequence text = "Funciono";
+                    //Toast.makeText(Registro.this, text, Toast.LENGTH_SHORT).show();
                 }
             }
         }, new Response.ErrorListener() {

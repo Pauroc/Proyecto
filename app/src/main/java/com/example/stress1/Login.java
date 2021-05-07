@@ -52,7 +52,7 @@ public class Login extends AppCompatActivity {
                     Etxt.setError("Campo vacio");
                     Ptxt.setError("Campo vacio");
                 }else if(Patterns.EMAIL_ADDRESS.matcher(email).matches() && !Contraseña.isEmpty()){
-                    ValidarUsuario("http://evolve-ava.000webhostapp.com/validar_usuario.php");
+                    ValidarUsuario("http://10.0.2.2/Prueba/validar_usuario.php");
                     /*CharSequence text = "Datos correctos";
                     Toast.makeText(Login.this, text, Toast.LENGTH_SHORT).show();
                     //Etxt.setError("Formato correcto de correo\"");*/
@@ -67,7 +67,7 @@ public class Login extends AppCompatActivity {
             @Override
             public void onResponse(String response) {
                 if (!response.isEmpty()){
-                    Ptxt.setError(response.toString());
+                    Ptxt.setError("Usuario correcto");
                     /*CharSequence text = "Funciono";
                     Toast.makeText(Login.this, text, Toast.LENGTH_SHORT).show();*/
                 }
