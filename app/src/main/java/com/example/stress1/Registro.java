@@ -1,5 +1,6 @@
 package com.example.stress1;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
@@ -9,6 +10,16 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.android.volley.AuthFailureError;
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.StringRequest;
+import com.android.volley.toolbox.Volley;
+
+import java.util.HashMap;
+import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -29,7 +40,6 @@ public class Registro extends AppCompatActivity {
         Etxt = findViewById(R.id.REmail);
         Ctxt = findViewById(R.id.RContraseña);
         CCtxt = findViewById(R.id.RConfiContreseña);
-
         RRegistro = findViewById(R.id.Iniciar);
         RRegistro.setOnClickListener(new View.OnClickListener() {
 
@@ -52,10 +62,10 @@ public class Registro extends AppCompatActivity {
                 }else if(Patterns.EMAIL_ADDRESS.matcher(email).matches()){
                     if (Contraseña.equals(CContraseña)){
                         if(ContraseñaV( Contraseña) ) {
-                            CharSequence text = "Datos correctos";
-                            Toast.makeText(Registro.this, text, Toast.LENGTH_SHORT).show();
+                            CrearUsuario("");
+                            /*CharSequence text = "Datos correctos";
+                            Toast.makeText(Registro.this, text, Toast.LENGTH_SHORT).show();*/
                         }else{
-
                             Ctxt.setError("La contraseña debe contener al menos una letra en mayúscula, minúscula\n" +
                                     "Un caracter numérico\n"+
                                     "Un caracter especial");
@@ -89,5 +99,42 @@ public class Registro extends AppCompatActivity {
                 );
         Matcher mather = pattern.matcher(Contraseña);
         return mather.find();
+    }
+    public void CrearUsuario(String URL){
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, URL, new Response.Listener<String>() {
+            @Override
+            public void onResponse(String response) {
+                if (!response.isEmpty()){
+                    //Ptxt.setError(response.toString());
+                    CharSequence text = "Funciono";
+                    Toast.makeText(Registro.this, text, Toast.LENGTH_SHORT).show();
+                }
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                Ctxt.setError(error.toString());
+                //Toast.makeText(Login.this, error.toString(), Toast.LENGTH_SHORT).show();
+            }
+        }){
+            @Nullable
+            @Override
+            protected Map<String, String> getParams() throws AuthFailureError {
+                String nombre = Ntxt.getText().toString();
+                String apellido = Atxt.getText().toString();
+                String email = Etxt.getText().toString();
+                String Contraseña = Ctxt.getText().toString();
+
+                Map<String,String> Parametros = new HashMap<>();
+                Parametros.put("Nombre", nombre);
+                Parametros.put("Apellido", apellido);
+                Parametros.put("Correo",email);
+                Parametros.put("Contraseña", Contraseña);
+
+                return Parametros;
+            }
+        };
+        RequestQueue requestQueue = Volley.newRequestQueue(this);
+        requestQueue.add(stringRequest);
     }
 }
