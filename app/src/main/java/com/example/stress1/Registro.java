@@ -83,8 +83,6 @@ public class Registro extends AppCompatActivity {
         });
     }
     public boolean ContraseñaV(String Contraseña) {
-        // Patrón para validar la contraseña
-        //Pattern pattern = Pattern.compile("^([a-z]{5,6})([A-Z]{2,3})([0-9]{3})$");
         Pattern pattern = Pattern.compile
                 (
                         "^"+
