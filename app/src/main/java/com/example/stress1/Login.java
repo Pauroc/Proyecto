@@ -67,9 +67,12 @@ public class Login extends AppCompatActivity {
             @Override
             public void onResponse(String response) {
                 if (!response.isEmpty()){
-                    Ptxt.setError("Usuario correcto");
-                    /*CharSequence text = "Funciono";
-                    Toast.makeText(Login.this, text, Toast.LENGTH_SHORT).show();*/
+                    //Ptxt.setError("Usuario correcto");
+                    CharSequence text = response;
+                    Toast.makeText(Login.this, text, Toast.LENGTH_SHORT).show();
+                    Intent i = new Intent(Login.this, Pregunta1.class);
+                    startActivity(i);
+
                 }
             }
         }, new Response.ErrorListener() {

@@ -12,6 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar"
         android:usesCleartextTraffic="true">
+        <activity android:name=".Graficas"></activity>
         <activity android:name=".Pregunta1" />
         <activity android:name=".Login">
             <intent-filter>
