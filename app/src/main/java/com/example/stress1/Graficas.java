@@ -37,6 +37,23 @@ public class Graficas extends AppCompatActivity {
         XAxis xAxis = radarChart.getXAxis();
         xAxis.setValueFormatter(new IndexAxisValueFormatter(labels));
         radarChart.setData(radarData);
+        RadarChart radarChart2 = findViewById(R.id.Radarchat2);
+        ArrayList<RadarEntry> ValoresGraficas2 = new ArrayList<>();
+        ValoresGraficas2.add(new RadarEntry(1500));
+        ValoresGraficas2.add(new RadarEntry(1590));
+        ValoresGraficas2.add(new RadarEntry(1480));
+        ValoresGraficas2.add(new RadarEntry(2090));
+        RadarDataSet Radarg2 = new RadarDataSet(ValoresGraficas2,"Prueba Radar");
+        Radarg2.setColor(Color.BLUE);
+        Radarg2.setLineWidth(2F);
+        Radarg2.setValueTextColor(Color.BLUE);
+        Radarg2.setValueTextSize(14f);
+        RadarData radarData2 = new RadarData();
+        radarData2.addDataSet(Radarg2);
+        String[] labels2 = {"2020","2019","2018","2017"};
+        XAxis xAxis2 = radarChart.getXAxis();
+        xAxis2.setValueFormatter(new IndexAxisValueFormatter(labels2));
+        radarChart2.setData(radarData2);
 
     }
 }

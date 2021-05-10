@@ -723,7 +723,6 @@
             tools:layout_editor_absoluteX="263dp"
             tools:layout_editor_absoluteY="2053dp" />
     </RadioGroup>
-
     <Button
         android:id="@+id/Graficar"
         android:layout_width="wrap_content"
