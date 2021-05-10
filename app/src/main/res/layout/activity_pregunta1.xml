@@ -86,6 +86,7 @@
                 tools:layout_editor_absoluteX="152dp"
                 tools:layout_editor_absoluteY="71dp" />
         </RadioGroup>
+
         <TextView
             android:id="@+id/pregunta2"
             android:layout_width="wrap_content"
@@ -161,6 +162,7 @@
                 tools:layout_editor_absoluteY="377dp" />
 
         </RadioGroup>
+
         <TextView
             android:id="@+id/pregunta3"
             android:layout_width="wrap_content"

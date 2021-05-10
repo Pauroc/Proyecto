@@ -8,7 +8,6 @@
 
     tools:context=".Login">
 
-
     <Button
         android:id="@+id/btnregistro"
         android:layout_width="match_parent"
@@ -84,6 +83,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtContraseñaI" />
+
     <ImageView
         android:id="@+id/imageView6"
         android:layout_width="326dp"
