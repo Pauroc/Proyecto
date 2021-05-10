@@ -11,13 +11,11 @@
     android:layout_height="wrap_content"
     android:padding="40dp"
     tools:context=".Pregunta1">
-
-
     <TextView
         android:id="@+id/pregunta1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:text="1.¿Me siento agotado constantemente por mis responsabilidades académicas?"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -35,7 +33,7 @@
             android:id="@+id/p1o1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="RadioButton"
+            android:text="Nunca"
             tools:layout_editor_absoluteX="152dp"
             tools:layout_editor_absoluteY="71dp" />
 
@@ -43,7 +41,7 @@
             android:id="@+id/p1o2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="RadioButton"
+            android:text="Casi nunca"
             tools:layout_editor_absoluteX="152dp"
             tools:layout_editor_absoluteY="71dp" />
 
@@ -51,7 +49,7 @@
             android:id="@+id/p1o3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="RadioButton"
+            android:text="Raramente"
             tools:layout_editor_absoluteX="152dp"
             tools:layout_editor_absoluteY="71dp" />
 
@@ -59,7 +57,7 @@
             android:id="@+id/p1o4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="RadioButton"
+            android:text="A veces"
             tools:layout_editor_absoluteX="152dp"
             tools:layout_editor_absoluteY="71dp" />
 
@@ -67,7 +65,7 @@
             android:id="@+id/p1o5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="RadioButton"
+            android:text="A menudo"
             tools:layout_editor_absoluteX="152dp"
             tools:layout_editor_absoluteY="71dp" />
 
@@ -75,7 +73,7 @@
             android:id="@+id/p1o6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="RadioButton"
+            android:text="Muy a menudo"
             tools:layout_editor_absoluteX="152dp"
             tools:layout_editor_absoluteY="71dp" />
 
@@ -83,21 +81,19 @@
             android:id="@+id/p1o7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="RadioButton"
+            android:text="Cada día"
             tools:layout_editor_absoluteX="152dp"
             tools:layout_editor_absoluteY="71dp" />
     </RadioGroup>
-
     <TextView
         android:id="@+id/pregunta2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="TextView"
+        android:text="2.¿Me siento decepcionado por mis resultados académicos?"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/radioGroup2" />
-
     <RadioGroup
         android:id="@+id/radioGroup3"
         android:layout_width="wrap_content"
@@ -111,7 +107,7 @@
             android:id="@+id/p2o1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="RadioButton"
+            android:text="Nunca"
             tools:layout_editor_absoluteX="165dp"
             tools:layout_editor_absoluteY="377dp" />
 
@@ -119,7 +115,7 @@
             android:id="@+id/p2o2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="RadioButton"
+            android:text="Casi nunca"
             tools:layout_editor_absoluteX="165dp"
             tools:layout_editor_absoluteY="377dp" />
 
@@ -127,7 +123,7 @@
             android:id="@+id/p2o3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="RadioButton"
+            android:text="Raramente"
             tools:layout_editor_absoluteX="165dp"
             tools:layout_editor_absoluteY="377dp" />
 
@@ -135,7 +131,7 @@
             android:id="@+id/p2o4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="RadioButton"
+            android:text="A veces"
             tools:layout_editor_absoluteX="165dp"
             tools:layout_editor_absoluteY="377dp" />
 
@@ -143,7 +139,7 @@
             android:id="@+id/p2o5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="RadioButton"
+            android:text="A menudo"
             tools:layout_editor_absoluteX="165dp"
             tools:layout_editor_absoluteY="377dp" />
 
@@ -151,7 +147,7 @@
             android:id="@+id/p2o6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="RadioButton"
+            android:text="Muy a menudo"
             tools:layout_editor_absoluteX="165dp"
             tools:layout_editor_absoluteY="377dp" />
 
@@ -159,22 +155,20 @@
             android:id="@+id/p207"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="RadioButton"
+            android:text="Cada día"
             tools:layout_editor_absoluteX="165dp"
             tools:layout_editor_absoluteY="377dp" />
 
     </RadioGroup>
-
     <TextView
         android:id="@+id/pregunta3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="TextView"
+        android:text="3.Siento una desesperanza como: ¿Por qué hacer eso? ¿Para qué tantos trabajos?"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/radioGroup3" />
-
     <RadioGroup
         android:id="@+id/radioGroup4"
         android:layout_width="wrap_content"
@@ -188,7 +182,7 @@
             android:id="@+id/p3o1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="RadioButton"
+            android:text="Nunca"
             tools:layout_editor_absoluteX="161dp"
             tools:layout_editor_absoluteY="645dp" />
 
@@ -196,7 +190,7 @@
             android:id="@+id/p3o2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="RadioButton"
+            android:text="Casi nunca"
             tools:layout_editor_absoluteX="161dp"
             tools:layout_editor_absoluteY="645dp" />
 
@@ -204,7 +198,7 @@
             android:id="@+id/p3o3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="RadioButton"
+            android:text="Raramente"
             tools:layout_editor_absoluteX="161dp"
             tools:layout_editor_absoluteY="645dp" />
 
@@ -212,7 +206,7 @@
             android:id="@+id/p3o4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="RadioButton"
+            android:text="A veces"
             tools:layout_editor_absoluteX="161dp"
             tools:layout_editor_absoluteY="645dp" />
 
@@ -220,7 +214,7 @@
             android:id="@+id/p3o5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="RadioButton"
+            android:text="A menudo"
             tools:layout_editor_absoluteX="161dp"
             tools:layout_editor_absoluteY="645dp" />
 
@@ -228,7 +222,7 @@
             android:id="@+id/p3o6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="RadioButton"
+            android:text="Muy a menudo"
             tools:layout_editor_absoluteX="161dp"
             tools:layout_editor_absoluteY="645dp" />
 
@@ -236,24 +230,20 @@
             android:id="@+id/p3o7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="RadioButton"
+            android:text="Cada día"
             tools:layout_editor_absoluteX="161dp"
             tools:layout_editor_absoluteY="645dp" />
     </RadioGroup>
-
-
-
     <TextView
         android:id="@+id/pregunta4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="TextView"
+        android:text="4.¿Me siento agobiado por parciales y trabajos en exceso?"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/radioGroup4" />
-
     <RadioGroup
         android:id="@+id/radioGroup5"
         android:layout_width="wrap_content"
@@ -267,7 +257,7 @@
             android:id="@+id/p4o1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="RadioButton"
+            android:text="Nunca"
             tools:layout_editor_absoluteX="155dp"
             tools:layout_editor_absoluteY="930dp" />
 
@@ -275,7 +265,7 @@
             android:id="@+id/p4o2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="RadioButton"
+            android:text="Casi nunca"
             tools:layout_editor_absoluteX="155dp"
             tools:layout_editor_absoluteY="930dp" />
 
@@ -283,7 +273,7 @@
             android:id="@+id/p4o3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="RadioButton"
+            android:text="Raramente"
             tools:layout_editor_absoluteX="155dp"
             tools:layout_editor_absoluteY="930dp" />
 
@@ -291,7 +281,7 @@
             android:id="@+id/p4o4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="RadioButton"
+            android:text="A veces"
             tools:layout_editor_absoluteX="155dp"
             tools:layout_editor_absoluteY="930dp" />
 
@@ -299,7 +289,7 @@
             android:id="@+id/p4o5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="RadioButton"
+            android:text="A menudo"
             tools:layout_editor_absoluteX="155dp"
             tools:layout_editor_absoluteY="930dp" />
 
@@ -307,7 +297,7 @@
             android:id="@+id/p4o6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="RadioButton"
+            android:text="Muy a menudo"
             tools:layout_editor_absoluteX="155dp"
             tools:layout_editor_absoluteY="930dp" />
 
@@ -315,74 +305,434 @@
             android:id="@+id/p4o7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="RadioButton"
+            android:text="Cada día"
             tools:layout_editor_absoluteX="155dp"
             tools:layout_editor_absoluteY="930dp" />
     </RadioGroup>
-
     <TextView
         android:id="@+id/pregunta5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="TextView"
+        android:text="5.¿Tengo sentimientos frecuentes de inutilidad?"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/radioGroup5" />
-
     <RadioGroup
+        android:id="@+id/radioGroup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/pregunta5" >
+        app:layout_constraintTop_toBottomOf="@+id/pregunta5">
 
         <RadioButton
             android:id="@+id/p5o1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="RadioButton" />
+            android:text="Nunca" />
 
         <RadioButton
             android:id="@+id/p5o2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="RadioButton" />
+            android:text="Casi nunca" />
 
         <RadioButton
             android:id="@+id/p5o3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="RadioButton" />
+            android:text="Raramente" />
 
         <RadioButton
             android:id="@+id/p5o4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="RadioButton" />
+            android:text="A veces" />
 
         <RadioButton
             android:id="@+id/p5o5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="RadioButton" />
+            android:text="A menudo" />
 
         <RadioButton
             android:id="@+id/p5o6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="RadioButton" />
+            android:text="Muy a menudo" />
 
         <RadioButton
             android:id="@+id/p5o7"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="RadioButton" />
+            android:text="Cada día" />
+    </RadioGroup>
+    <TextView
+        android:id="@+id/pregunta6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="6.¿Soy detallista en exceso?"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+    <RadioGroup
+        android:id="@+id/radioGroup6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pregunta6">
+
+        <RadioButton
+            android:id="@+id/p6o1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nunca"
+            tools:layout_editor_absoluteX="244dp"
+            tools:layout_editor_absoluteY="1494dp" />
+
+        <RadioButton
+            android:id="@+id/p6o2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Casi nunca"
+            tools:layout_editor_absoluteX="244dp"
+            tools:layout_editor_absoluteY="1494dp" />
+
+        <RadioButton
+            android:id="@+id/p6o3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Raramente"
+            tools:layout_editor_absoluteX="244dp"
+            tools:layout_editor_absoluteY="1494dp" />
+
+        <RadioButton
+            android:id="@+id/p6o4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A veces"
+            tools:layout_editor_absoluteX="244dp"
+            tools:layout_editor_absoluteY="1494dp" />
+
+        <RadioButton
+            android:id="@+id/p6o5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A menudo"
+            tools:layout_editor_absoluteX="244dp"
+            tools:layout_editor_absoluteY="1494dp" />
+
+        <RadioButton
+            android:id="@+id/p6o6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Muy a menudo"
+            tools:layout_editor_absoluteX="244dp"
+            tools:layout_editor_absoluteY="1494dp" />
+
+        <RadioButton
+            android:id="@+id/p6o7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cada día"
+            tools:layout_editor_absoluteX="244dp"
+            tools:layout_editor_absoluteY="1494dp" />
+
+    </RadioGroup>
+    <TextView
+        android:id="@+id/Pregunta7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="7.He Cambiado de apetito; como demasiado o pérdida de apetito"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup6" />
+    <RadioGroup
+        android:id="@+id/radioGroup7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Pregunta7">
+
+        <RadioButton
+            android:id="@+id/p7o1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nunca"
+            tools:layout_editor_absoluteX="162dp"
+            tools:layout_editor_absoluteY="1767dp" />
+
+        <RadioButton
+            android:id="@+id/p7o2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Casi nunca"
+            tools:layout_editor_absoluteX="162dp"
+            tools:layout_editor_absoluteY="1767dp" />
+
+        <RadioButton
+            android:id="@+id/p7o3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Raramente"
+            tools:layout_editor_absoluteX="162dp"
+            tools:layout_editor_absoluteY="1767dp" />
+
+        <RadioButton
+            android:id="@+id/p7o4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A veces"
+            tools:layout_editor_absoluteX="162dp"
+            tools:layout_editor_absoluteY="1767dp" />
+
+        <RadioButton
+            android:id="@+id/p7o5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A menudo"
+            tools:layout_editor_absoluteX="162dp"
+            tools:layout_editor_absoluteY="1767dp" />
+
+        <RadioButton
+            android:id="@+id/p7o6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Muy a menudo"
+            tools:layout_editor_absoluteX="162dp"
+            tools:layout_editor_absoluteY="1767dp" />
+
+        <RadioButton
+            android:id="@+id/p7o7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cada día"
+            tools:layout_editor_absoluteX="162dp"
+            tools:layout_editor_absoluteY="1767dp" />
+    </RadioGroup>
+    <TextView
+        android:id="@+id/pregunta8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="8.¿He sufrido de pérdida de entusiasmo / placer en el estudio?"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup7" />
+    <RadioGroup
+        android:id="@+id/radioGroup8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pregunta8" >
+
+    <RadioButton
+        android:id="@+id/p8o1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nunca"
+        tools:layout_editor_absoluteX="263dp"
+        tools:layout_editor_absoluteY="2053dp" />
+        <RadioButton
+            android:id="@+id/p8o2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Casi nunca"
+            tools:layout_editor_absoluteX="263dp"
+            tools:layout_editor_absoluteY="2053dp" />
+        <RadioButton
+            android:id="@+id/p8o3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Raramente"
+            tools:layout_editor_absoluteX="263dp"
+            tools:layout_editor_absoluteY="2053dp" />
+        <RadioButton
+            android:id="@+id/p8o4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A veces"
+            tools:layout_editor_absoluteX="263dp"
+            tools:layout_editor_absoluteY="2053dp" />
+        <RadioButton
+            android:id="@+id/p8o5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A menudo"
+            tools:layout_editor_absoluteX="263dp"
+            tools:layout_editor_absoluteY="2053dp" />
+        <RadioButton
+            android:id="@+id/p8o6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Muy a menudo"
+            tools:layout_editor_absoluteX="263dp"
+            tools:layout_editor_absoluteY="2053dp" />
+        <RadioButton
+            android:id="@+id/p8o7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cada día"
+            tools:layout_editor_absoluteX="263dp"
+            tools:layout_editor_absoluteY="2053dp" />
+    </RadioGroup>
+    <TextView
+        android:id="@+id/pregunta9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="9.¿Tengo trastornos regulares del sueño? ¿Vigilia? ¿Nunca duermo lo suficiente?"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup8" />
+    <RadioGroup
+        android:id="@+id/radioGroup9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pregunta9" >
+
+        <RadioButton
+            android:id="@+id/p9o1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nunca"
+            tools:layout_editor_absoluteX="263dp"
+            tools:layout_editor_absoluteY="2053dp" />
+        <RadioButton
+            android:id="@+id/p9o2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Casi nunca"
+            tools:layout_editor_absoluteX="263dp"
+            tools:layout_editor_absoluteY="2053dp" />
+        <RadioButton
+            android:id="@+id/p9o3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Raramente"
+            tools:layout_editor_absoluteX="263dp"
+            tools:layout_editor_absoluteY="2053dp" />
+        <RadioButton
+            android:id="@+id/p9o4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A veces"
+            tools:layout_editor_absoluteX="263dp"
+            tools:layout_editor_absoluteY="2053dp" />
+        <RadioButton
+            android:id="@+id/p9o5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A menudo"
+            tools:layout_editor_absoluteX="263dp"
+            tools:layout_editor_absoluteY="2053dp" />
+        <RadioButton
+            android:id="@+id/p9o6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Muy a menudo"
+            tools:layout_editor_absoluteX="263dp"
+            tools:layout_editor_absoluteY="2053dp" />
+        <RadioButton
+            android:id="@+id/p9o7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cada día"
+            tools:layout_editor_absoluteX="263dp"
+            tools:layout_editor_absoluteY="2053dp" />
+    </RadioGroup>
+    <TextView
+        android:id="@+id/pregunta10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="10.Tengo ganas de gritar: ¡Basta ya! ¡Estoy harto!"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup9" />
+    <RadioGroup
+        android:id="@+id/radioGroup10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pregunta10" >
+
+        <RadioButton
+            android:id="@+id/p10o1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nunca"
+            tools:layout_editor_absoluteX="263dp"
+            tools:layout_editor_absoluteY="2053dp" />
+        <RadioButton
+            android:id="@+id/p10o2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Casi nunca"
+            tools:layout_editor_absoluteX="263dp"
+            tools:layout_editor_absoluteY="2053dp" />
+        <RadioButton
+            android:id="@+id/p10o3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Raramente"
+            tools:layout_editor_absoluteX="263dp"
+            tools:layout_editor_absoluteY="2053dp" />
+        <RadioButton
+            android:id="@+id/p10o4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A veces"
+            tools:layout_editor_absoluteX="263dp"
+            tools:layout_editor_absoluteY="2053dp" />
+        <RadioButton
+            android:id="@+id/p10o5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A menudo"
+            tools:layout_editor_absoluteX="263dp"
+            tools:layout_editor_absoluteY="2053dp" />
+        <RadioButton
+            android:id="@+id/p10o6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Muy a menudo"
+            tools:layout_editor_absoluteX="263dp"
+            tools:layout_editor_absoluteY="2053dp" />
+        <RadioButton
+            android:id="@+id/p10o7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cada día"
+            tools:layout_editor_absoluteX="263dp"
+            tools:layout_editor_absoluteY="2053dp" />
     </RadioGroup>
 
-
+    <Button
+        android:id="@+id/Graficar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup10" />
 </androidx.constraintlayout.widget.ConstraintLayout>
 
 </ScrollView>
