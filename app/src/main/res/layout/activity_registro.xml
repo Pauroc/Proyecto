@@ -128,12 +128,42 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="24dp"
         android:background="@drawable/button_redon_border"
         android:text="Resgistrar"
         android:textColor="#DBDBDB"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#BDBDBD"
+        android:buttonTint="#BDBDBD"
+        android:shadowColor="#BDBDBD"
+        android:text=""
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/RConfiContreseña" />
+
+    <TextView
+        android:id="@+id/Priva"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:text="Acepto políticas de privacidad."
+        android:textColor="#BDBDBD"
+        android:textColorHighlight="#BDBDBD"
+        android:textColorHint="#BDBDBD"
+        android:textColorLink="#BDBDBD"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toEndOf="@+id/checkBox"
+        app:layout_constraintTop_toBottomOf="@+id/RConfiContreseña" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

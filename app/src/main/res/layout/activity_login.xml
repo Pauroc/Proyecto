@@ -84,20 +84,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtContraseñaI" />
 
-    <Button
-        android:id="@+id/Términos"
-        android:layout_width="match_parent"
-        android:layout_height="63dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="32dp"
-        android:background="@drawable/button_redon"
-        android:text="Act PopUp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnregistro" />
-
     <ImageView
         android:id="@+id/imageView6"
         android:layout_width="326dp"

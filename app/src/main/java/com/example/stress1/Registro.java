@@ -3,11 +3,13 @@ package com.example.stress1;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Dialog;
 import android.os.Bundle;
 import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.volley.AuthFailureError;
@@ -25,21 +27,40 @@ import java.util.regex.Pattern;
 
 public class Registro extends AppCompatActivity {
     private Button RRegistro;
+    Dialog Terminos1;
     private EditText Ntxt;
     private EditText Atxt;
     private EditText Etxt;
     private EditText Ctxt;
     private EditText CCtxt;
+    private TextView TerminosPriva;
     @Override
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registro);
+        Terminos1 = new Dialog(this);
         Ntxt = findViewById(R.id.Nombres);
         Atxt = findViewById(R.id.Apellidos);
         Etxt = findViewById(R.id.REmail);
         Ctxt = findViewById(R.id.RContraseña);
         CCtxt = findViewById(R.id.RConfiContreseña);
+        TerminosPriva = findViewById(R.id.Priva);
+        TerminosPriva.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                TextView txtclose;
+                Terminos1.setContentView(R.layout.popup_terminos);
+                txtclose = (TextView) Terminos1.findViewById(R.id.CerrarT);
+                txtclose.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Terminos1.dismiss();
+                    }
+                });
+                Terminos1.show();
+            }
+        });
         RRegistro = findViewById(R.id.Iniciar);
         RRegistro.setOnClickListener(new View.OnClickListener() {
 

@@ -27,8 +27,6 @@ import java.util.Map;
 
 public class Login extends AppCompatActivity {
     private Button Registrop;
-    private Button Terminos;
-    Dialog Terminos1;
     private Button Inicio;
     private EditText Etxt;
     private EditText Ptxt;
@@ -36,25 +34,8 @@ public class Login extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        Terminos1 = new Dialog(this);
         Etxt = findViewById(R.id.Nombres);
         Ptxt = findViewById(R.id.txtContraseñaI);
-        Terminos = findViewById(R.id.Términos);
-        Terminos.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                TextView txtclose;
-                Terminos1.setContentView(R.layout.popup_terminos);
-                txtclose = (TextView) Terminos1.findViewById(R.id.CerrarT);
-                txtclose.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        Terminos1.dismiss();
-                    }
-                });
-                Terminos1.show();
-            }
-        });
         Registrop = findViewById(R.id.btnregistro);
         Registrop.setOnClickListener(new View.OnClickListener() {
             @Override
