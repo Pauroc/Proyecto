@@ -1,21 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+<androidx.constraintlayout.widget.ConstraintLayout
     android:orientation="vertical"
-    android:layout_width="350dp"
-    android:layout_height="475dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
     android:background="#424242"
-    android:padding="5dp"
-    android:layout_gravity="center">
+    android:padding="5dp">
+
 
     <TextView
         android:id="@+id/CerrarT"
         android:layout_width="20dp"
         android:layout_height="20dp"
         android:layout_gravity="end"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
         android:gravity="center"
         android:text="X"
         android:textColor="@color/white"
@@ -23,5 +26,34 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Tiene fines netamente académicos basados en modelos psicológicos empíricamente validados, por ende, no se pedirán datos personales y toda la información suministrada por usted en este cuestionario no será divulgada ni entregada a ninguna otra institución o persona sin su consentimiento expreso, según la Ley 1581 de 2012, ley 1090 y en la declaración de Helsinki de la AMM.
 
+Los resultados obtenidos de esta prueba pueden ser publicados o presentados en reuniones o eventos con fines académicos. Las respuestas obtenidas en este cuestionario se mantendrán en un lugar seguro. El estudio y sus respuestas suministradas no le generarán consecuencias de ninguna naturaleza.
+
+He leído y comprendido íntegramente este documento, entiendo que los datos obtenidos en el estudio pueden ser publicados o difundidos con fines netamente académicos. En consecuencia, acepto su contenido y mi participación en este estudio de manera libre y voluntaria y en caso de no querer continuar podré renunciar a participar en cualquier momento sin responsabilidad alguna.
+Tiene fines netamente académicos basados en modelos psicológicos empíricamente validados, por ende, no se pedirán datos personales y toda la información suministrada por usted en este cuestionario no será divulgada ni entregada a ninguna otra institución o persona sin su consentimiento expreso, según la Ley 1581 de 2012, ley 1090 y en la declaración de Helsinki de la AMM.
+
+Los resultados obtenidos de esta prueba pueden ser publicados o presentados en reuniones o eventos con fines académicos. Las respuestas obtenidas en este cuestionario se mantendrán en un lugar seguro. El estudio y sus respuestas suministradas no le generarán consecuencias de ninguna naturaleza.
+
+He leído y comprendido íntegramente este documento, entiendo que los datos obtenidos en el estudio pueden ser publicados o difundidos con fines netamente académicos. En consecuencia, acepto su contenido y mi participación en este estudio de manera libre y voluntaria y en caso de no querer continuar podré renunciar a participar en cualquier momento sin responsabilidad alguna.
+Tiene fines netamente académicos basados en modelos psicológicos empíricamente validados, por ende, no se pedirán datos personales y toda la información suministrada por usted en este cuestionario no será divulgada ni entregada a ninguna otra institución o persona sin su consentimiento expreso, según la Ley 1581 de 2012, ley 1090 y en la declaración de Helsinki de la AMM.
+
+Los resultados obtenidos de esta prueba pueden ser publicados o presentados en reuniones o eventos con fines académicos. Las respuestas obtenidas en este cuestionario se mantendrán en un lugar seguro. El estudio y sus respuestas suministradas no le generarán consecuencias de ninguna naturaleza.
+
+He leído y comprendido íntegramente este documento, entiendo que los datos obtenidos en el estudio pueden ser publicados o difundidos con fines netamente académicos. En consecuencia, acepto su contenido y mi participación en este estudio de manera libre y voluntaria y en caso de no querer continuar podré renunciar a participar en cualquier momento sin responsabilidad alguna.
+
+"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CerrarT" />
 </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
