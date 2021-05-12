@@ -35,7 +35,6 @@ public class Registro extends AppCompatActivity {
     private EditText CCtxt;
     private TextView TerminosPriva;
     @Override
-
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registro);
@@ -59,18 +58,24 @@ public class Registro extends AppCompatActivity {
                     }
                 });
                 Terminos1.show();
+                TextView TerminosPriva2;
+                TerminosPriva2 = (TextView) Terminos1.findViewById(R.id.CerrarT2);
+                TerminosPriva2.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Terminos1.dismiss();
+                    }
+                });
             }
         });
         RRegistro = findViewById(R.id.Iniciar);
         RRegistro.setOnClickListener(new View.OnClickListener() {
-
         public void onClick(View v) {
             String nombre = Ntxt.getText().toString();
             String apellido = Atxt.getText().toString();
             String email = Etxt.getText().toString();
             String Contraseña = Ctxt.getText().toString();
             String CContraseña = CCtxt.getText().toString();
-
             if(nombre.isEmpty() || apellido.isEmpty() || email.isEmpty() || Contraseña.isEmpty() || CContraseña.isEmpty()) {
                 CharSequence text = "Diligencie todos los campos";
                 Toast.makeText(Registro.this, text, Toast.LENGTH_SHORT).show();
